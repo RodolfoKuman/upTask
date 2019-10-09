@@ -1,0 +1,26 @@
+{
+  "name": "uptask",
+  "version": "1.0.0",
+  "description": "UPTASK MVC",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RodolfoKuman/upTask.git"
+  },
+  "author": "Rodolfo Kuman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RodolfoKuman/upTask/issues"
+  },
+  "homepage": "https://github.com/RodolfoKuman/upTask#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pug": "^2.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.3"
+  }
+}
