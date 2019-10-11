@@ -18,7 +18,9 @@
   "homepage": "https://github.com/RodolfoKuman/upTask#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "pug": "^2.0.4"
+    "mysql2": "^1.7.0",
+    "pug": "^2.0.4",
+    "sequelize": "^5.19.5"
   },
   "devDependencies": {
     "nodemon": "^1.19.3"
