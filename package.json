@@ -4,7 +4,8 @@
   "description": "UPTASK MVC",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon ./index.js"
+    "start": "nodemon ./index.js",
+    "watch": "webpack --w --mode development"
   },
   "repository": {
     "type": "git",
@@ -17,12 +18,21 @@
   },
   "homepage": "https://github.com/RodolfoKuman/upTask#readme",
   "dependencies": {
+    "concurrently": "^5.0.0",
     "express": "^4.17.1",
+    "express-validator": "^6.2.0",
     "mysql2": "^1.7.0",
     "pug": "^2.0.4",
-    "sequelize": "^5.19.5"
+    "sequelize": "^5.19.5",
+    "shortid": "^2.2.15",
+    "slug": "^1.1.0"
   },
   "devDependencies": {
-    "nodemon": "^1.19.3"
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "babel-loader": "^8.0.6",
+    "nodemon": "^1.19.3",
+    "webpack": "^4.41.1",
+    "webpack-cli": "^3.3.9"
   }
 }
