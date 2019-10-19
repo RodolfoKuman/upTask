@@ -9,6 +9,7 @@ const helpers = require('./helpers');
 const db = require('./config/db');
 
 require('./models/Proyectos');
+require("./models/Tareas");
 
 db.sync()
     .then(() => console.log('Conectado al Servidor'))
@@ -27,7 +28,7 @@ app.use((req, res, next) => {
 	next();
 })
 
-app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.urlencoded({extended: false}));
 
 app.use('/', routes());
 
