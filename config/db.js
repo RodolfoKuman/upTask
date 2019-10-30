@@ -1,18 +1,24 @@
 const Sequelize = require('sequelize');
 
+require('dotenv').config({path: 'variables.env' });
+
 // Option 1: Passing parameters separately
-const db = new Sequelize('uptask', 'root', '', {
-  host: 'localhost',
-  dialect: 'mysql',
-  define: {
-  	timestamps: false
-  },
-  pool: {
-    max: 5,
-    min: 0,
-    acquire: 30000,
-    idle: 10000
-  }
+const db = new Sequelize(
+  process.env.BD_NOMBRE, 
+  process.env.BD_USER, 
+  process.env.BD_PASS, 
+  {
+    host: process.env.BD_HOST,
+    dialect: 'mysql',
+    define: {
+      timestamps: false
+    },
+    pool: {
+      max: 5,
+      min: 0,
+      acquire: 30000,
+      idle: 10000
+    }
 
 });
 
